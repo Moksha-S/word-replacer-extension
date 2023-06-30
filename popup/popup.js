@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   replaceButton.addEventListener("click", function () {
     chrome.runtime.sendMessage({ replace: true }).then(() => {
       setTimeout(() => {
-        chrome.tabs.create({ url: "http://localhost:8080/" });
+        chrome.tabs.create({ url: "https://www.simform.com/" });
         window.close();
       }, 1000);
     });
